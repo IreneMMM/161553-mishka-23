@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Ирина](https://up.htmlacademy.ru/adaptive/23/user/161553).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Наг](https://htmlacademy.ru/profile/id47061).
 
 ---
 
