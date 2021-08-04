@@ -13,7 +13,7 @@
         alt="Главная страница сайта по продаже вязанных вещей Мишка.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list menu-list">
           <li class="menu-list__item">
@@ -149,7 +149,7 @@
   </main>
 
   <footer class="page-footer">
-    <ul class="social social-list">
+    <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
           Инстаграме</a>
@@ -167,8 +167,7 @@
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано:</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">Логотип HTML Academy</span>
-        <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none">
+        <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-labelledby="title">
           <title id="title">Перейти на страницу Онлайн‑курса HTML и CSS. Адаптивная вёрстка и автоматизация.</title>
           <path
             d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
@@ -178,27 +177,27 @@
     </div>
   </footer>
 
-  <section class="popup">
-    <h2 class="popup__title">Добавить в корзину</h2>
-    <form class="popup-form" method="get" action="https://echo.htmlacademy.ru">
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="size-table" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <legend class="popup-form__legend">Выберите размер:</legend>
-        <ul class="popup-list">
-          <li class="popup-list__item">
-            <input id="size-s" type="radio" name="item-size" value="s">
-            <label for="size-s">S</label>
+        <legend class="size-table__legend">Выберите размер:</legend>
+        <ul class="size-list">
+          <li class="size-list__item">
+            <input class="size-list__input" id="size-s" type="radio" name="item-size" value="s">
+            <label class="size-list__label" for="size-s">S</label>
           </li>
-          <li class="popup-list__item">
-            <input id="size-m" type="radio" name="item-size" value="m">
-            <label for="size-m">M</label>
+          <li class="size-list__item">
+            <input class="size-list__input" id="size-m" type="radio" name="item-size" value="m">
+            <label class="size-list__label" for="size-m">M</label>
           </li>
-          <li class="popup-list__item">
-            <input id="size-l" type="radio" name="item-size" value="l">
-            <label for="size-l">L</label>
+          <li class="size-list__item">
+            <input class="size-list__input" id="size-l" type="radio" name="item-size" value="l">
+            <label class="size-list__label" for="size-l">L</label>
           </li>
         </ul>
       </fieldset>
-      <button class="popup-form__button button" type="submit">Добавить</button>
+      <button class="size-table__button button" type="submit">Добавить</button>
     </form>
   </section>
 
