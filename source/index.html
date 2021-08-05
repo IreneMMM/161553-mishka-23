@@ -1,12 +1,206 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="logo" href="#">
+      <img src="img/icons/logo-mobile.svg" width="86" height="35"
+        alt="Главная страница сайта по продаже вязанных вещей Мишка.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="catalog.html">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="form.html">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link--search" href="#">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link--cart" href="#">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+
+        <!-- список ссылок для планшетной версии и десктопа -->
+        <ul class="page-header__links link-list">
+          <li class="link-list__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="link-list__item">
+            <a href="#">Распродажа</a>
+          </li>
+          <li class="link-list__item">
+            Бесплатная доставка по России
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+
+    <section class="categories">
+      <h2 class="visually-hidden">Виды выполняемых работ.</h2>
+      <ul class="categories__list categories-list">
+        <li class="categories-list__item">
+          <a href="#">
+            Предметы интерьера
+          </a>
+        </li>
+        <li class="categories-list__item">
+          <a href="#">
+            Детские игрушки
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="promo">
+      <h2 class="promo__title">Вязаные корзинки</h2>
+      <p class="promo__slogan">Товар недели</p>
+      <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+        размерах.</p>
+      <table class="promo__features">
+        <tr>
+          <th>Цвет:</th>
+          <td>«Тиффани»/серый</td>
+        </tr>
+        <tr>
+          <th>Диаметр:</th>
+          <td>25 см</td>
+        </tr>
+        <tr>
+          <th>Высота:</th>
+          <td>15 см</td>
+        </tr>
+      </table>
+      <img class="promo__image" src="img/content/promo-mobile.jpg" width="260" height="315"
+        alt="3 вязаные корзинки ручной работы.">
+      <p class="promo__price">Цена: 990 руб.</p>
+      <a class="promo__button button" href="#">Заказать</a>
+    </section>
+
+    <section class="about">
+      <h2 class="about__title">Коротко о нас:</h2>
+      <ul class="about__list about-list">
+        <li class="about-list__item">Экологически чистые материалы</li>
+        <li class="about-list__item">Скандинавский стиль по российской цене</li>
+        <li class="about-list__item">Увеличивает лайки на фотографиях</li>
+        <li class="about-list__item">Связано вручную с любовью и умилением</li>
+        <li class="about-list__item">Поддержка отечественного производителя</li>
+        <li class="about-list__item">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <div class="review">
+        <blockquote class="review__content">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+          инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+          стильными, а также
+          набирают больше лайков!
+        </blockquote>
+        <cite class="review__author">Анастасия Красильникова</cite>
+        <p class="review__author-link">@misssssiskras</p>
+      </div>
+      <div class="reviews__button-group">
+        <button class="reviews__button-prev" type="button">Предыдущий</button>
+        <button class="reviews__button-next" type="button">Следующий</button>
+      </div>
+      <a class="reviews__button button" href="#">Написать</a>
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <dl class="contacts__list">
+        <dt class="contacts__item">e-mail:</dt>
+        <dd class="contacts__email">
+          <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </dd>
+        <dt class="contacts__item">адрес:</dt>
+        <dd class="contacts__address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+      </dl>
+
+      <div class="contacts__map">
+        <img class="contacts__map-image" src="img/content/map-mobile.jpg" alt="">
+      </div>
+      <a class="contacts__button button" href="#">Напишите нам</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+          Инстаграме</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+          Фейсбуке</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в
+          Твиттере</a>
+      </li>
+    </ul>
+
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-labelledby="title">
+          <title id="title">Перейти на страницу Онлайн‑курса HTML и CSS. Адаптивная вёрстка и автоматизация.</title>
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="#63D1BB" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="size-table" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend class="size-table__legend">Выберите размер:</legend>
+        <ul class="size-list">
+          <li class="size-list__item">
+            <input class="size-table__input" id="size-s" type="radio" name="item-size" value="s">
+            <label class="size-table__label" for="size-s">S</label>
+          </li>
+          <li class="size-list__item">
+            <input class="size-table__input" id="size-m" type="radio" name="item-size" value="m">
+            <label class="size-table__label" for="size-m">M</label>
+          </li>
+          <li class="size-list__item">
+            <input class="size-table__input" id="size-l" type="radio" name="item-size" value="l">
+            <label class="size-table__label" for="size-l">L</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="size-table__button button" type="submit">Добавить</button>
+    </form>
+  </section>
+
+</body>
+
 </html>
