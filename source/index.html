@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -56,11 +57,13 @@
 
   <main class="page-main">
 
-    <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+    <div class="page-main__title-wrapper">
+      <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+    </div>
 
     <section class="categories">
       <h2 class="visually-hidden">Виды выполняемых работ.</h2>
-      <ul class="categories__list categories-list">
+      <ul class="categories-list">
         <li class="categories-list__item">
           <a href="#">
             Предметы интерьера
@@ -135,14 +138,14 @@
       <dl class="contacts__list">
         <dt class="contacts__item">e-mail:</dt>
         <dd class="contacts__email">
-          <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </dd>
         <dt class="contacts__item">адрес:</dt>
         <dd class="contacts__address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
       </dl>
 
       <div class="contacts__map">
-        <img class="contacts__map-image" src="img/content/map-mobile.jpg" alt="">
+        <img class="contacts__map-image" src="img/content/map-mobile.jpg" alt="" width="320" height="455">
       </div>
       <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
@@ -165,7 +168,7 @@
     </ul>
 
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-labelledby="title">
           <title id="title">Перейти на страницу Онлайн‑курса HTML и CSS. Адаптивная вёрстка и автоматизация.</title>
@@ -180,7 +183,7 @@
   <section class="modal">
     <h2 class="modal__title">Добавить в корзину</h2>
     <form class="size-table" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
+      <fieldset class="size-table__fieldset">
         <legend class="size-table__legend">Выберите размер:</legend>
         <ul class="size-list">
           <li class="size-list__item">

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -54,7 +55,9 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Вязание на заказ</h1>
+    <div class="page-main__title-inner">
+      <h1 class="page-main__title ">Вязание на заказ</h1>
+    </div>
 
     <section class="form-order">
       <h2 class="visually-hidden">Форма заказа товара.</h2>
@@ -65,7 +68,7 @@
         <div class="form__container">
           <fieldset class="form__group">
             <legend class="form__title">Тип</legend>
-            <ul class="type-filter">
+            <ul class="type-filter filter">
               <li class="type-filter__item">
                 <input class="form__radio form__radio--checked" type="radio" name="type" value="accessory" id="accessory" checked="">
                 <label class="form__label" for="accessory">
@@ -86,7 +89,7 @@
         <div class="form__container">
           <fieldset class="form__group">
             <legend class="form__title">Цвет</legend>
-            <ul class="color-filter">
+            <ul class="color-filter filter">
               <li class="color-filter__item">
                 <input class="form__checkbox form__checkbox--checked" type="checkbox" name="color" value="white" id="white" checked="">
                 <label class="form__label" for="white">
@@ -136,7 +139,7 @@
           <fieldset class="form__group">
             <legend class="form__title">ФИО</legend>
 
-            <ul class="user-filter">
+            <ul class="user-filter filter">
               <li class="user-filter__item">
                 <label class="form__label" for="name">
                   Имя:
@@ -165,7 +168,7 @@
 
         <div class="form__container">
           <fieldset class="form__group">
-            <ul class="contacts-filter">
+            <ul class="contacts-filter filter">
               <li class="contacts-filter__item">
                 <input class="form__input form__input--phone" id="phone" type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 <label class="form__title form__title--phone" for="phone">Тел</label>
@@ -212,7 +215,7 @@
 
 
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-labelledby="title">
           <title id="title">Перейти на страницу Онлайн‑курса HTML и CSS. Адаптивная вёрстка и автоматизация.</title>
