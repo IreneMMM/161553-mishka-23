@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -54,11 +55,13 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Каталог товаров</h1>
+    <div class="page-main__title-inner">
+      <h1 class="page-main__title">Каталог товаров</h1>
+    </div>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров.</h2>
-      <ul class="catalog__list">
+      <ul class="catalog__list catalog-list">
         <li class="catalog-list__item">
           <a class="catalog-list__image-link" href="#">
             <img class="catalog-list__image" src="./img/content/rabbit-mobile.jpg" alt="Зайчик-попрыгайчик">
@@ -80,7 +83,7 @@
               <h3 class="catalog-list__item-title">Корзинка для белья</h3>
             </a>
             <p class="catalog-list__item-description">Диаметр 30 см, высота 30 см</p>
-            <p class="catalog-list__item-price">1 500 руб.</p>
+            <p class="catalog-list__item-price">690 руб.</p>
           </div>
         </li>
         <li class="catalog-list__item">
@@ -96,9 +99,8 @@
           </div>
         </li>
       </ul>
-
-
     </section>
+
     <section class="process-video">
       <div class="process-video__wrapper">
         <h2 class="process-video__title">Процесс производства</h2>
@@ -131,7 +133,7 @@
 
 
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" aria-labelledby="title">
           <title id="title">Перейти на страницу Онлайн‑курса HTML и CSS. Адаптивная вёрстка и автоматизация.</title>
