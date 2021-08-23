@@ -2,11 +2,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .categories-list__item {
   background-color: @basic-downy;
-  padding: 24px 20px 31px 30px;
+  padding-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 36px;
+  }
+}
+
+.categories-list__item:last-child {
+  background-color: @basic-downy-dark;
 }
 
 .categories-list__item a {
@@ -15,4 +28,8 @@
   line-height: 24px;
   text-decoration: none;
   color: @basic-white;
+  display: block;
+  width: 130px;
+  box-sizing: border-box;
+  padding: 24px 0 31px;
 }

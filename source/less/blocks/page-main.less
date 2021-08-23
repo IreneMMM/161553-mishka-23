@@ -1,3 +1,16 @@
+.page-main {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
+}
+
 .page-main__title {
   font-size: 27px;
   font-weight: 700;
@@ -5,10 +18,19 @@
   text-align: center;
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    .title-big;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    .title-large;
+  }
 }
 
 .page-main__title-wrapper {
-  width: 320px;
   min-height: 226px;
   background-image: url("../../img/content/hero-mobile.jpg");
   background-repeat: no-repeat;

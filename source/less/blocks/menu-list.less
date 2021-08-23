@@ -10,4 +10,145 @@
   line-height: 24px;
   text-decoration: none;
   color: @basic-black;
+  display: block;
+  box-sizing: border-box;
+  min-height: 79px;
+  padding: 28px;
+  padding-left: 76px;
+
+  @media (min-width: @tablet-width) {
+    min-height: auto;
+    padding: 32px 0;
+  }
+
+  &--new {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  &--sale {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  &--search {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      width: 82px;
+      height: 88px;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--catalog {
+
+    @media (min-width: @tablet-width) {
+      padding: 20px 35px 20px 0;
+    }
+  }
+
+  &--knitting {
+
+    @media (min-width: @tablet-width) {
+      padding: 20px 35px 20px 0;
+    }
+  }
+
+}
+
+.menu-list__item {
+
+  &--delivery {
+  color: @basic-grey;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 3;
+    margin-left: auto;
+  }
+}
+
+  &--logo {
+    padding: 22px;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      box-sizing: border-box;
+      padding: 0px;
+      padding-right: 210px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 250px;
+      padding-right: 0;
+    }
+
+  }
+
+  &--catalog {
+
+    @media (min-width: @tablet-width) {
+      order: 2;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: -2;
+      width: 200px;
+    }
+  }
+
+  &--knitting {
+
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: -1;
+      width: 200px;
+    }
+  }
+  &--new {
+
+    @media (min-width: @desktop-width) {
+      width: 200px;
+    }
+  }
+  &--sale {
+
+    @media (min-width: @desktop-width) {
+      width: 200px;
+    }
+  }
+
+  &--cart {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.menu-list__link--search-name {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.menu-list__item--search svg {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
