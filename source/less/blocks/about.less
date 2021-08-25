@@ -1,8 +1,23 @@
 .about {
   padding: 31px 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 225px;
+  }
 }
 
 .about__title {
   .title;
-  margin-bottom: 82px;
+
+  @media (min-width: @tablet-width) {
+    .title-big;
+  }
+
+  @media (min-width: @desktop-width) {
+    .title-large;
+  }
 }
