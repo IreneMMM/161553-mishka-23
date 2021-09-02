@@ -1,5 +1,13 @@
 .form-order {
   padding: 17px 30px 73px;
+
+  @media (min-width: @tablet-width) {
+    padding: 66px 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 116px 0 50px;
+  }
 }
 
 .form-order__description {
@@ -7,4 +15,15 @@
   color: @basic-grey;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 63px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 225px;
+  }
 }

@@ -40,5 +40,15 @@
 
 .page-main__title-inner {
   background-color: @basic-background-grey;
-  padding: 73px 0;
+  padding: 74px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 101px 0 75px;
+    margin-top: -60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 102px 0 96px;
+    margin-top: -80px;
+  }
 }
