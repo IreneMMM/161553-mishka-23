@@ -19,17 +19,17 @@
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
         </li>
-        <li class="menu-list__item menu-list__item--catalog">
+        <li class="menu-list__item menu-list__item--catalog menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--catalog" href="catalog.html">
             Каталог товаров
           </a>
         </li>
-        <li class="menu-list__item menu-list__item--knitting">
+        <li class="menu-list__item menu-list__item--knitting menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--knitting" href="form.html">
             Вязание на заказ
           </a>
         </li>
-        <li class="menu-list__item menu-list__item--search">
+        <li class="menu-list__item menu-list__item--search menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--search" href="#">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path opacity="0.2"
@@ -39,7 +39,7 @@
             <span class="menu-list__link--search-name">Поиск по сайту</span>
           </a>
         </li>
-        <li class="menu-list__item menu-list__item--cart">
+        <li class="menu-list__item menu-list__item--cart menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--cart" href="#">
             Корзина: пока пуста
           </a>
@@ -67,12 +67,12 @@
       <h2 class="visually-hidden">Виды выполняемых работ.</h2>
       <ul class="categories-list">
         <li class="categories-list__item">
-          <a href="#">
+          <a class="categories-list__link categories-list__link--interior" href="#">
             Предметы интерьера
           </a>
         </li>
         <li class="categories-list__item">
-          <a href="#">
+          <a class="categories-list__link categories-list__link--toys" href="#">
             Детские игрушки
           </a>
         </li>
@@ -87,18 +87,18 @@
 
       <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
         размерах.</p>
-      <table class="promo__features">
-        <tr>
-          <th>Цвет:</th>
-          <td>«Тиффани»/серый</td>
+      <table class="promo__features promo-table">
+        <tr class="promo-table__row">
+          <th class="promo-table__row-title">Цвет:</th>
+          <td class="promo-table__row-value">«Тиффани»/серый</td>
         </tr>
-        <tr>
-          <th>Диаметр:</th>
-          <td>25 см</td>
+        <tr class="promo-table__row">
+          <th class="promo-table__row-title">Диаметр:</th>
+          <td class="promo-table__row-value">25 см</td>
         </tr>
-        <tr>
-          <th>Высота:</th>
-          <td>15 см</td>
+        <tr class="promo-table__row">
+          <th class="promo-table__row-title">Высота:</th>
+          <td class="promo-table__row-value">15 см</td>
         </tr>
       </table>
       <img class="promo__image" src="img/content/promo-mobile.jpg" width="260" height="315"
@@ -110,12 +110,12 @@
     <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
       <ul class="about__list about-list">
-        <li class="about-list__item">Экологически <br/> чистые материалы</li>
-        <li class="about-list__item">Скандинавский стиль <br/> по российской цене</li>
-        <li class="about-list__item">Увеличивает лайки <br/> на фотографиях</li>
-        <li class="about-list__item">Связано вручную <br/> с любовью и умилением</li>
-        <li class="about-list__item">Поддержка отечественного производителя</li>
-        <li class="about-list__item">Поставляется <br/> в подарочной упаковке</li>
+        <li class="about-list__item about-list__item--materials">Экологически <br/> чистые материалы</li>
+        <li class="about-list__item about-list__item--style">Скандинавский стиль <br/> по российской цене</li>
+        <li class="about-list__item about-list__item--likes">Увеличивает лайки <br/> на фотографиях</li>
+        <li class="about-list__item about-list__item--handmade">Связано вручную <br/> с любовью и умилением</li>
+        <li class="about-list__item about-list__item--support">Поддержка отечественного производителя</li>
+        <li class="about-list__item about-list__item--package">Поставляется <br/> в подарочной упаковке</li>
       </ul>
     </section>
 
@@ -132,10 +132,10 @@
         <p class="review__author-link">@misssssiskras</p>
       </div>
       <div class="reviews__button-group">
-        <button class="reviews__button-prev" type="button">Предыдущий</button>
-        <button class="reviews__button-next" type="button">Следующий</button>
+        <button class="reviews__button reviews__button--prev" type="button"><span class="visually-hidden">Предыдущий</span></button>
+        <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Следующий</span></button>
       </div>
-      <a class="reviews__button button" href="#">Написать</a>
+      <a class="review__button button" href="#">Написать</a>
     </section>
 
     <section class="contacts">
@@ -222,6 +222,23 @@
       <button class="size-table__button button" type="submit">Добавить</button>
     </form>
   </section>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
 </body>
 

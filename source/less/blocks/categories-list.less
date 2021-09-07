@@ -11,10 +11,11 @@
 
 .categories-list__item {
   background-color: @basic-downy;
-  padding-left: 30px;
+  padding: 24px 31px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-left: 36px;
+    padding: 25px 36px 42px;
   }
 }
 
@@ -31,5 +32,32 @@
   display: block;
   width: 130px;
   box-sizing: border-box;
-  padding: 24px 0 31px;
+}
+
+.categories-list__link--interior::after {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+  content: "";
+  display: block;
+  height: 62px;
+  width: 40px;
+  background-image: url("../img/icons/lamp.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+
+.categories-list__link--toys::after {
+  position: absolute;
+  top: 21px;
+  right: 27px;
+  content: "";
+  display: block;
+  height: 60px;
+  width: 60px;
+  background-image: url("../img/icons/toy.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
 }
