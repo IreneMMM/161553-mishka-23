@@ -1,5 +1,6 @@
 .about {
-  padding: 31px 30px;
+  padding: 0 30px;
+  margin-bottom: 58px;
 
   @media (min-width: @tablet-width) {
     padding: 40px 50px;
@@ -19,5 +20,125 @@
 
   @media (min-width: @desktop-width) {
     .title-large;
+  }
+}
+
+.about-list__item {
+  padding-top: 83px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--materials {
+    &::before {
+      width: 33px;
+      height: 38px;
+      left: 5px;
+      top: 28px;
+      background-image: url("../../img/icons/icon-materials.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 43px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 40px;
+      }
+    }
+  }
+
+  &--style {
+    &::before {
+      width: 47px;
+      height: 27px;
+      left: 0;
+      top: 28px;
+      background-image: url("../../img/icons/icon-style.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 46px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 41px;
+      }
+    }
+  }
+
+  &--likes {
+    &::before {
+      width: 47px;
+      height: 27px;
+      left: 1px;
+      top: 33px;
+      background-image: url("../../img/icons/icon-likes.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 52px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 47px;
+      }
+    }
+  }
+
+  &--handmade {
+    &::before {
+      width: 35px;
+      height: 34px;
+      left: 4px;
+      top: 31px;
+      background-image: url("../../img/icons/icon-handmade.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 46px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 43px;
+      }
+    }
+  }
+
+  &--support {
+    &::before {
+      width: 55px;
+      height: 23px;
+      left: -5px;
+      top: 31px;
+      background-image: url("../../img/icons/icon-support.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 48px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 45px;
+      }
+    }
+  }
+
+  &--package {
+    &::before {
+      width: 33px;
+      height: 32px;
+      left: 3px;
+      top: 29px;
+      background-image: url("../../img/icons/icon-package.svg");
+
+      @media (min-width: @tablet-width) {
+        top: 48px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 45px;
+      }
+    }
   }
 }
