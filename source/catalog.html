@@ -19,17 +19,17 @@
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
         </li>
-        <li class="menu-list__item menu-list__item--catalog">
+        <li class="menu-list__item menu-list__item--catalog menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--catalog" href="#">
             Каталог товаров
           </a>
         </li>
-        <li class="menu-list__item menu-list__item--knitting">
+        <li class="menu-list__item menu-list__item--knitting menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--knitting" href="form.html">
             Вязание на заказ
           </a>
         </li>
-        <li class="menu-list__item menu-list__item--search">
+        <li class="menu-list__item menu-list__item--search menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--search" href="#">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path opacity="0.2"
@@ -39,7 +39,7 @@
             <span class="menu-list__link--search-name">Поиск по сайту</span>
           </a>
         </li>
-        <li class="menu-list__item menu-list__item--cart">
+        <li class="menu-list__item menu-list__item--cart menu-list__item--hidden">
           <a class="menu-list__link menu-list__link--cart" href="#">
             Корзина: пока пуста
           </a>
@@ -160,6 +160,23 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
 </body>
 

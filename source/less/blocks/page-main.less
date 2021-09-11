@@ -9,7 +9,6 @@
   @media (min-width: @desktop-width) {
     width: 1150px;
     border-top: 1px solid @basic-light-grey;
-    margin-top: -88px;
   }
 }
 
@@ -47,14 +46,36 @@
 .page-main__title-inner {
   background-color: @basic-background-grey;
   padding: 74px 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding: 101px 0 75px;
     margin-top: -60px;
+    z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
     padding: 102px 0 96px;
-    margin-top: -80px;
+    margin-top: -77px;
+  }
+}
+
+.page-main__title-inner::after {
+  @media (min-width: @tablet-width) {
+  content: "";
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 35px;
+  background-image: url("../../img/icons/zigzag-line-big.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/icons/zigzag-line-large.svg");
+    bottom: -18px;
   }
 }
