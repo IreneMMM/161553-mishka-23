@@ -10,7 +10,6 @@
   }
 }
 
-
 .color-filter__item {
   position: relative;
   min-height: 38px;
@@ -24,24 +23,5 @@
   @media (min-width: @tablet-width) {
     min-height: 52px;
     padding-left: 82px;
-  }
-}
-
-.color-filter__item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 38px;
-  height: 38px;
-  background-color: transparent;
-  border: 2px @basic-grey solid;
-  cursor: pointer;
-  box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    width: 52px;
-    height: 52px;
   }
 }
