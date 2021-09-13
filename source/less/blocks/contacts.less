@@ -73,6 +73,12 @@
 .contacts__map {
   padding: 0;
   margin-bottom: 38px;
+  width: 100%;
+  background-image: url("../img/content/map-tablet.jpg");
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: @desktop-width) {
     grid-row-start: 1;
