@@ -92,7 +92,6 @@
   color: @basic-grey;
   margin: 0;
   padding-bottom: 19px;
-  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
@@ -109,6 +108,8 @@
   margin: 0;
   padding-top: 23px;
   border-top: 1px solid @basic-light-grey;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     margin-top: auto;
@@ -118,4 +119,29 @@
 
 .catalog-list__image {
   width: 100%;
+}
+
+.catalog-list__button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 7px 0 0 5px;
+}
+
+.catalog-list__icon {
+  width: 20px;
+  height: 19px;
+  fill: @basic-black;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: @hover-downy;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: @hover-downy;
+    opacity: 0.3;
+  }
 }

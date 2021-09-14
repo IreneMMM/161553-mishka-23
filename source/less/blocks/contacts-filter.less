@@ -15,10 +15,27 @@
 }
 
 .contacts-filter__item {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 100px 500px;
+    grid-template-columns: 100px 500px 1fr;
     flex-wrap: wrap;
     grid-column-gap: 67px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 100px 700px 1fr;
+    grid-column-gap: 17px;
+  }
+}
+
+.contacts-filter__item:hover .form__input-icon {
+  fill: @hover-downy;
+  opacity: 1;
+}
+
+
+.contacts-filter__item:hover .form__input {
+  border-color: @line_downy;
 }

@@ -16,6 +16,14 @@
   border: 2px solid @basic-grey;
   margin-right: 7px;
 
+  &:hover {
+    border-color: @basic-grey-opacity;
+  }
+
+  &:active {
+    border-color: @line_downy;
+  }
+
   @media (min-width: @tablet-width) {
     width: 112px;
   }
@@ -27,4 +35,8 @@
 
 .size-list__item input {
   display: none;
+}
+
+.size-list__item > .size-table__input:checked {
+  border: 2px solid @basic-downy;
 }

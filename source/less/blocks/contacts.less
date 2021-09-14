@@ -5,7 +5,7 @@
   color: @basic-grey;
 
   @media (min-width: @tablet-width) {
-    padding: 68px 50px 50px;
+    padding: 68px 0 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -13,19 +13,19 @@
     grid-template-columns: 132px 1fr 525px;
     align-items: flex-end;
     grid-template-rows: repeat(3, auto);
-    grid-column-gap: 42px;
     padding: 54px 50px;
   }
 }
 
 .contacts__title {
+  position: relative;
   .title;
   padding: 0 30px;
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     .title-big;
-    padding: 0;
+    padding: 0 50px;
     margin-bottom: 49px;
   }
 
@@ -38,6 +38,26 @@
   }
 }
 
+.contacts__title::after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    display: block;
+    height: 81px;
+    width: 46px;
+    background-image: url("../../img/icons/flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -111px;
+  }
+}
+
 .contacts__list {
   margin: 0;
   padding: 0 30px 62px;
@@ -46,7 +66,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 82px 1fr 82px 1fr;
-    padding: 0;
+    padding: 0 50px;
     margin-bottom: 50px;
     font-size: 17px;
   }
@@ -68,6 +88,16 @@
   text-decoration: none;
   line-height: 30px;
   color: @basic-grey;
+  border-bottom: 1px solid @line_downy;
+
+  &:hover {
+    color: @hover-downy;
+    border-bottom: 1px solid @hover-downy;
+  }
+
+  &:active {
+    border-bottom: 1px solid @hover-downy-opacity;
+  }
 }
 
 .contacts__map {
@@ -113,6 +143,6 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
-    margin-left: 0;
+    margin-left: 50px;
   }
 }
