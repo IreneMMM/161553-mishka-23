@@ -23,9 +23,13 @@
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
-    background-image: url("../img/content/review-background.jpg");
+    background-image: url("../img/content/review-background.png");
     background-repeat: no-repeat;
     background-size: 350px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/review-background@2x.png");
+    }
 
     &::after {
       content: "";
