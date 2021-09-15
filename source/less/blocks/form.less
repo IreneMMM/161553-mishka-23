@@ -126,10 +126,6 @@
   font-size: 17px;
   line-height: 18px;
 
-  &:hover,
-  &:active {
-    border-color: @line_downy;
-  }
 
   @media (min-width: @tablet-width) {
     padding: 15px 17px;
@@ -144,6 +140,28 @@
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  content: "";
+  bottom: 16px;
+  right: 7px;
+  width: 25;
+  height: 24px;
+  fill: @basic-black;
+  opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    bottom: 23px;
+    right: 90px;
+    grid-column-start: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 24px;
+    right: 23px;
   }
 }
 

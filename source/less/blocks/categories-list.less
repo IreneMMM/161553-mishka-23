@@ -14,6 +14,11 @@
   padding: 24px 31px;
   position: relative;
 
+  &:hover,
+  &:active {
+    background-color: @hover-downy-dark;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 25px 36px 42px;
   }
@@ -21,6 +26,11 @@
 
 .categories-list__item:last-child {
   background-color: @basic-downy-dark;
+
+  &:hover,
+  &:active {
+    background-color: @hover-downy;
+  }
 }
 
 .categories-list__item a {
