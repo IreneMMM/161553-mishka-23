@@ -1,17 +1,3 @@
-.page-main {
-  margin: 0 auto;
-  width: 320px;
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1150px;
-    border-top: 1px solid @basic-light-grey;
-  }
-}
-
 .page-main__title {
   font-size: 27px;
   font-weight: 700;
@@ -39,6 +25,7 @@
   background-repeat: no-repeat;
   padding-top: 73px;
   background-position: 50% 0;
+  border-top: 1px solid @basic-light-grey;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/content/hero-mobile@2x.jpg");
@@ -70,15 +57,15 @@
   }
 }
 
-
 .page-main__title-inner {
   background-color: @basic-background-grey;
   padding: 74px 0;
   position: relative;
+  border-top: 1px solid @basic-light-grey;
 
   @media (min-width: @tablet-width) {
     padding: 101px 0 75px;
-    margin-top: -60px;
+    margin-top: -64px;
     z-index: -1;
   }
 
@@ -92,18 +79,18 @@
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
-    bottom: -23px;
+    bottom: -13px;
     left: 0;
     display: block;
     width: 100%;
     height: 35px;
     background-image: url("../../img/icons/zigzag-line-big.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-repeat: round;
+    background-position-x: center;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../../img/icons/zigzag-line-large.svg");
-    bottom: -18px;
+    bottom: -20px;
   }
 }
